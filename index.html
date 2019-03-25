@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,300i,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/queries.css">
+</head>
+<body>
+  <header>
+    <div class="mobile-nav">
+      <ion-icon id="mobile-navigation" name="md-menu" class="mobile-nav-btn"></ion-icon>
+      <h4 class="mobile-nav-title">Peranni IT</h4>
+    </div>
+    <nav class="side-nav">
+      <h4 class="side-nav-title">Menu</h4>
+      <ion-icon name="close" class="closeBtn"></ion-icon>
+      <ul class="mobile-nav-btns">
+        <li><ion-icon name="home" class="mobile-nav-icon"></ion-icon><a href="#">Home</a></li>
+        <li><ion-icon name="help" class="mobile-nav-icon"></ion-icon><a href="#about">About</a></li>
+        <li><ion-icon name="desktop" class="mobile-nav-icon"></ion-icon><a href="#services">Services</a></li>
+        <li><ion-icon name="contacts" class="mobile-nav-icon"></ion-icon><a href="#contact">Contact</a></li>
+      </div>
+    </nav>
+    <div class="row">
+        <ul class="header-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="title-screen">
+      <h1>Full-stack Developer</h1>
+      <p>Hello, my name is Luciano Peranni and im an aspiring developer from Croatia.<br> My goal is to make beautiful applications.</p>
+    </div>
+  </header>
+
+  <section id="about" class="section-about">
+    <div class="about-container row">
+      <div class="about-text">
+        <h3>About me</h2>
+        <p>
+          I am a German-born half Italian half Croatian IT Student at the Split University Department for Professional Studies.
+          I started my Developer Journey making console applications in C. Today, my main focus are Front-End Technologies like React, HTML5 and CSS3 with Node.js backends.
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="resources/images/ja.jpg" alt="my_image">
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section-portfolio">
+    <div class="row">
+      <h2>My Services</h2>
+      <p class="portfolio-text">
+        I am constantly learning new technologies to be up to date with current programming trends.
+        The following are some of the types of programs i am able to produce.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-3 skill-card">
+        <ion-icon name="today"></ion-icon>
+        <h4>Responsive Web design</h4>
+        <p>My Web applications and Sites are responsive and look good on devices of all sizes. Don't believe me? Resize this site.</p>
+      </div>
+      <div class="col span-1-of-3 skill-card">
+        <ion-icon name="tablet-portrait"></ion-icon>
+        <h4>Modern Mobile Apps</h4>
+        <p>Using React Native and Android Studio i develop mobile Apps mainly for Android Phones</p>
+      </div>
+      <div class="col span-1-of-3 skill-card">
+        <ion-icon name="desktop"></ion-icon>        
+        <h4>Desktop Apps</h4>
+        <p>Electron and QT are my Frameworks of choice to develop neat looking simple Desktop Applications</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section-contact">
+    <div class="row">
+        <h2>Want to contact me?</h2>
+    </div>
+    <div class="contact-card">
+      <form class="contact-form" action="">
+        <h3>Contact</h3>
+        <div class="input-container">
+          <label for="">First Name</label>
+          <input class="text-inputs" type="text" placeholder="First Name"><br>
+          <label for="">Last Name</label>
+          <input class="text-inputs" type="text" placeholder="Last Name"><br>
+          <label for="">E-mail</label>
+          <input class="text-inputs" type="email" placeholder="E-mail"><br>
+          <div class="text-submit">
+            <h4>Tell me about yourself</h4>
+            <textarea name="" id="" cols="50" rows="5"></textarea><br>
+          </div>
+          <input type="submit" value="Send" class="submit-btn">
+        </div>
+      </form>
+    </div>
+
+  </section>
+  <footer class="section-footer">
+    <div class="row">
+      <p class="col span-1-of-2">Published using Github Pages©</p>
+      <ul class="footer-list col span-1-of-2">
+        <li><ion-icon name="logo-github"></ion-icon></li>
+        <li><ion-icon name="logo-facebook"></ion-icon></li>
+        <li><ion-icon name="logo-twitter"></ion-icon></li>
+      </ul>
+    </div>
+  </footer>
+
+<!--SCRIPTS-->
+<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+<script src="resources/js/script.js"></script>
+
+</body>
+</html>
