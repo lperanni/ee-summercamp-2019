@@ -247,7 +247,7 @@ header {
   background: rgba(45, 52, 54, 0.4);
   width: 60%;
   padding: 20px;
-  margin-bottom: 40%;
+  
 }
 
 .about-text {
@@ -300,7 +300,7 @@ header {
 }
 
 .portfolio-text {
-  margin: 0 20px;
+  margin: 0 15px;
   color: white;
 }
 
@@ -321,6 +321,8 @@ header {
   color: #0984e3;
   margin: 10px 15px;
 }
+
+
 
 /*=====Contact=====*/
 

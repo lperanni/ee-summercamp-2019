@@ -47,30 +47,31 @@
   /*------ABOUT--------*/
 
   .about-container{
-    top: 15%;
-    padding: 20px;
+    
+    padding: 10px;
     width: 80%;
+    margin-bottom: 40px;
   }
-  .about-text{width: 90%;}
+  .about-text{
+    width: 100%;
    
-  .about-text h2{margin-bottom: 20px;}
+  }
+   
+  .about-text h3{ margin-top: 20px;}
 
   .about-text p{
     font-size: 90%;
     line-height: 25px;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-bottom: 30px;
   }
 
   .image-container img{
     text-align: center;
-    width: 80%;
+    width: 90%;
     height: auto;
   }
-  .about-text h3{
-    margin-left: 5%;
-  }
-
+  
 
 /*-----PORTFOLIO------*/
 
