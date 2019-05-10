@@ -37,7 +37,7 @@ h3 {
 }
 
 h1 {
-  font-size: 400%;
+  font-size: 450%;
   letter-spacing: 3px;
   margin-top: 0;
   font-weight: 300;
@@ -48,7 +48,6 @@ h2 {
   font-size: 300%;
   color: black;
   letter-spacing: 2px;
-  
   font-weight: 300;
   padding-bottom: 30px;
   margin-bottom: 10px;
@@ -127,15 +126,22 @@ a {
 header {
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url("../images/background.png");
   height: 100vh;
-  
+  padding: 0;
+}
+.nav-row{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 25px;
+  background-color: transparent;
+  z-index: 200;
 }
 
 .header-nav {
   list-style: none;
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  z-index: 200;
+  margin-top: 1%; 
+  margin-right: 8%;
+  text-align: right;
 }
 
 .header-nav li {
@@ -147,6 +153,8 @@ header {
 .header-nav li a:visited {
   text-decoration: none;
   color: white;
+  font-size: 110%;
+  font-weight: 400;
   padding-bottom: 7px;
   border-bottom: 2px solid transparent;
   -webkit-transition: border-bottom 0.4s, color 0.4s;
@@ -252,7 +260,7 @@ header {
 /*======ABOUT========*/
 
 .section-about {
-  background-color: #034f8a;
+  background-color: #9b59b6;
   padding-top: 120px;
   padding-bottom: 40px; 
 }
@@ -288,9 +296,52 @@ header {
 }
 /*=======Skills=======*/
 
+
+.section-skills{
+  padding: 130px;
+  color: black;
+  background-color: rgb(240, 239, 239);
+}
+
 .section-skills h2{
   color: black;
-  padding: 100px 0;
+  margin-bottom: 20px;
+}
+
+.section-skills p{
+  margin-bottom: 80px;
+  text-align: center;
+}
+.chart-row{
+  display: flex;
+  width: 90%;
+  margin-left: 10%;
+  flex: 1;
+  flex-direction: row;
+}
+
+.chart-container{
+  justify-content: space-between;
+  width: 50%;
+}
+
+
+.skill-chart{
+
+    max-width: 500px;
+    max-height: 500px;
+  
+}
+
+/*=====Portfolio======*/
+
+.section-portfolio{
+  padding: 130px;
+}
+
+.section-portfolio h2{
+  color: black;
+
 }
 
 
@@ -301,10 +352,12 @@ header {
   padding: 100px 0;
   background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245,245,245,0.8)) ,url("../images/portfolio-back.jpg");
   min-height: 100vh;
+  background-size: cover;
 }
 
 .section-services h2{
   color: black;
+  margin-top: 40px;
 }
 
 
@@ -439,23 +492,26 @@ header {
 .section-footer {
   background: rgb(22, 22, 22);
   height: fit-content;
-  padding: 40px 0;
+  padding: 40px 40px;
+}
+
+.footer-row {
+  display: flex;
+  width: 100%;
 }
 
 .section-footer p {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  
   font-size: 90%;
+  justify-content: flex-start;
+  width: 90%;
 }
 
 .footer-list {
   list-style-type: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  float: right;
   vertical-align: middle;
+  justify-content: end;
+  width: 10%;
 }
 
 .footer-list li {

@@ -30,20 +30,21 @@
         <li><ion-icon name="contacts" class="mobile-nav-icon"></ion-icon><a href="#contact">Contact</a></li>
       </div>
     </nav>
-    <div class="row">
+    <div class="nav-row">
         <ul class="header-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="title-screen">
-      <h1>Full-stack Developer</h1>
+      <h1>Web Developer</h1>
       <p>Hello, my name is Luciano Peranni and im an aspiring developer from Croatia.<br> My goal is to make beautiful applications.</p>
       <a class="btn btn-full">Show me your work!</a>
-      <a href="#contact" class="btn btn-ghost">Send me a message</a>
+      <a href="#contact" class="btn btn-ghost">Send me a message!</a>
     </div>
   </header>
 
@@ -65,7 +66,25 @@
   </section>
 
   <section id="skills" class="section-skills">
-    <h2>Skills</h2>
+    <h2>My Skills</h2>
+    <p>
+      As my primary Area of studying is Web development my skills are mainly based in the Javascript
+      programming language. Going along, the goal is to expand my skillset with more technologies. 
+      These are Graphs present the percentage to which is use the following languages/Frameworks.
+    </p>
+    <div class="chart-row">
+      <div class="chart-container">
+          <canvas class="skill-chart" id="frontend" width="200" height="200"></canvas>
+      </div>
+      <div class="chart-container">
+          <canvas class="skill-chart" id="backend" width="200" height="200"></canvas>
+      </div>
+    </div>
+  
+  </section>
+
+  <section id="portfolio" class="section-portfolio">
+    <h2>My Work</h2>
   </section>
 
   <section id="services" class="section-services">
@@ -114,7 +133,7 @@
 
   </section>
   <footer class="section-footer">
-    <div class="row">
+    <div class="footer-row">
       <p>Published using Github Pages©</p>
       <ul class="footer-list col span-1-of-2">
         <li><a href="https://github.com/lperanni"><ion-icon name="logo-github"></ion-icon></a></li>
@@ -125,6 +144,7 @@
   </footer>
 
 <!--SCRIPTS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 <script src="resources/js/script.js"></script>
 
