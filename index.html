@@ -31,11 +31,12 @@
       </div>
     </nav>
     <div class="nav-row">
-        <ul class="header-nav">
-        <li><a href="#">Home</a></li>
+      <div class="nav-logo">
+        <a href="#"><i>Luciano</i></a>
+      </div>
+      <ul class="header-nav">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -43,7 +44,7 @@
     <div class="title-screen">
       <h1>Web Developer</h1>
       <p>Hello, my name is Luciano Peranni and im an aspiring developer from Croatia.<br> My goal is to make beautiful applications.</p>
-      <a class="btn btn-full">Show me your work!</a>
+      <a href="#portfolio" class="btn btn-full">Show me your work!</a>
       <a href="#contact" class="btn btn-ghost">Send me a message!</a>
     </div>
   </header>
@@ -84,7 +85,24 @@
   </section>
 
   <section id="portfolio" class="section-portfolio">
-    <h2>My Work</h2>
+    <div class="portfolio-title">
+      <h2>My Work</h2>
+      <p class="portfolio-intro">These are some of the projects i have worked on for the past few months</p>
+    </div>  
+      <div class="work-row">
+          <img src="./resources/images/app-portfolio-icons/blogger-cat-app.png" alt="blog-app">
+          <div class="app-desc">
+            <h3>Blogger-Cat</h3>
+            <p>Hackable free Blog site template made in React.js</p>
+          </div>
+      </div>
+      <div class="work-row">
+        <div class="app-desc">
+          <h3>Schedule App</h3>
+          <p>A cross-platform Desktop application that keeps track of your University schedule</p>
+        </div>
+        <img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app">
+      </div>
   </section>
 
   <section id="services" class="section-services">
