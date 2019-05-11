@@ -126,18 +126,18 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  padding: 25px;
-  background: black;
+  padding: 20px;
+  background: transparent;
   z-index: 200;
 }
 
 .nav-logo{
   display: inline-block;
-  font-size: 110%;
-  margin: 2px;
   vertical-align: baseline;
   border: 5px solid #9b59b6;
   padding: 10px;
+  font-size: 120%;
+
 }
 
 .nav-logo i{
@@ -176,7 +176,7 @@ header {
 
 .title-screen {
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 15%;
   z-index: 2;
 }
@@ -268,15 +268,15 @@ header {
 
 .section-about {
   background-color: #9b59b6;
-  padding-top: 120px;
-  padding-bottom: 40px; 
+  padding: 60px; 
+  padding-top: 150px;
 }
 
 .about-container {
   
-  width: 90%;
+  width: 100%;
   display: flex;
-  margin-left: 7%;
+ 
 }
 
 .about-text {
@@ -344,20 +344,23 @@ header {
 
 .section-portfolio{
  
-  background: url("../images/section-about-background.jpg");
+  background: rgba(240,240,240,1);
   z-index: 1;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   background-size: cover;
+  
 }
 
 .portfolio-title{
   background-color: #9b59b6;
   color: white;
-  padding: 150px;
+  padding: 80px;
+  padding-top: 150px;
 }
 
 .portfolio-title h2{
   color: white;
+  font-size: 350%;
 }
 
 .portfolio-intro{
@@ -366,47 +369,39 @@ header {
   margin-left: 10%;
   text-align: center;
   margin-bottom: 50px;
-  font-size: 110%;
+  font-size: 120%;
   
 }
 
 .work-row{
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  padding: 0 80px;
   display: flex;
   flex: 1;
   flex-direction: row; 
-  margin-top: 150px;
+ 
+  
 }
 
-.work-row{ 
+.work-row *{ 
 
-  justify-content: space-around;
-  margin-right: 15%;
-  background-color: rgba(0,0,0,0.8);
-  box-shadow: 2px 2px 2px black;
-  padding: 40px;
-  border-radius: 10px;
-  
+  justify-content: space-between;
+  padding: 30px;
+  color: black;
 }
 
 .work-row img{
   height: 350px;
-  box-shadow: 1px 2px 2px white;
-  background: white;
-  border-radius: 60px;
-  padding: 20px;
 }
 
-
-
-.app-desc{
-  justify-content: space-around;
-  margin-top: 5%;
-  color: white;
+.app-desc p{
+  color: black;
+  margin-top: 0px;
 }
 .app-desc h3{
   color: #9b59b6;
+  margin-top: 20px;
+  padding-bottom: 5px;
 }
 
 
@@ -490,12 +485,12 @@ header {
 
 .contact-card {
 
-  width: fit-content ;
+  width: 50%;
   background-color: #034f8a;
   overflow: hidden;
   box-shadow: 0 2px 4px black;
   font-size: 90%;
-  margin: 0 auto;
+  margin-left: 25%;
   border-radius: 5px;
 
 }
@@ -559,7 +554,7 @@ header {
 .section-footer {
   background: rgb(22, 22, 22);
   height: fit-content;
-  padding: 40px 40px;
+  padding: 20px 40px;
 }
 
 .footer-row {

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,300i,400" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="resources/images/favicons/favicon-16x16.png">
@@ -42,10 +43,10 @@
       </ul>
     </div>
     <div class="title-screen">
-      <h1>Web Developer</h1>
-      <p>Hello, my name is Luciano Peranni and im an aspiring developer from Croatia.<br> My goal is to make beautiful applications.</p>
-      <a href="#portfolio" class="btn btn-full">Show me your work!</a>
-      <a href="#contact" class="btn btn-ghost">Send me a message!</a>
+      <h1 class="animated fadeInLeftBig">Web Developer</h1>
+      <p class="animated fadeInDown delay-1s">Hello, my name is Luciano Peranni and im an aspiring developer from Croatia.<br> My goal is to make beautiful applications.</p>
+      <a href="#portfolio" class="btn btn-full animated fadeInRight delay-2s">Show me your work!</a>
+      <a href="#contact" class="btn btn-ghost animated fadeInRight delay-2s">Send me a message!</a>
     </div>
   </header>
 
@@ -86,22 +87,22 @@
 
   <section id="portfolio" class="section-portfolio">
     <div class="portfolio-title">
-      <h2>My Work</h2>
-      <p class="portfolio-intro">These are some of the projects i have worked on for the past few months</p>
+      <h2>My Work</h2>  
+      <p class="portfolio-intro">For a few months i have been trying out a few different technologies, mostly for Web developing and occasionally Desktop Application development.These are some of the projects i have worked on for the past few months</p>
     </div>  
       <div class="work-row">
-          <img src="./resources/images/app-portfolio-icons/blogger-cat-app.png" alt="blog-app">
+          <a href="https://github.com/lperanni/blogger-cat.git"><img src="./resources/images/app-portfolio-icons/blogger-cat-app.png" alt="blog-app"></a>
           <div class="app-desc">
             <h3>Blogger-Cat</h3>
-            <p>Hackable free Blog site template made in React.js</p>
+            <p>Hackable free Blog site template made in React.js.</p>
           </div>
       </div>
       <div class="work-row">
+        <a href="https://github.com/KopiliCrew/Presentable-Schedule-App.git"><img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app"></a>
         <div class="app-desc">
           <h3>Schedule App</h3>
           <p>A cross-platform Desktop application that keeps track of your University schedule</p>
         </div>
-        <img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app">
       </div>
   </section>
 
@@ -128,7 +129,7 @@
       <div class="service-card">
         <ion-icon name="desktop"></ion-icon>        
         <h4>Desktop Apps</h4>
-        <p>Electron and QT are my Frameworks of choice to develop neat looking simple Desktop Applications</p>
+        <p>Electron is my Framework of choice to develop neat looking simple Desktop Applications</p>
       </div>
     </div>
   </section>
@@ -153,7 +154,7 @@
   <footer class="section-footer">
     <div class="footer-row">
       <p>Published using Github Pages©</p>
-      <ul class="footer-list col span-1-of-2">
+      <ul class="footer-list">
         <li><a href="https://github.com/lperanni"><ion-icon name="logo-github"></ion-icon></a></li>
         <li><a href="https://www.facebook.com/luciano.peranni"><ion-icon name="logo-facebook"></ion-icon></a></li>
         <li><a href="https://twitter.com/LucianoPeranni"><ion-icon name="logo-twitter"></ion-icon></a></li>

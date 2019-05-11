@@ -1,0 +1,45 @@
+@media only screen and (max-width: 1024px){
+
+  h1{
+    font-size: 350%
+  }
+
+  .about-text p{
+    font-size: 85%;
+  }
+  .work-row{
+    padding-left: 0;
+  }
+
+  .services-text{
+    font-size: 90%;
+  }
+  .service-card p{
+    font-size: 80%;
+  }
+  .service-card{
+    margin-right: 0;
+  }
+  .section-footer p {
+    width: 80%;
+  }
+  .section-footer ul{
+    width: 20%;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+
+    .section-contact{
+      padding: 0;
+    }
+  .contact-card {
+
+    width: 90%;
+    margin-left: 5%;
+    
+  }
+}

@@ -1,6 +1,8 @@
-let mobileNavBtn = document.getElementById("mobile-navigation")
-let mobileNav = document.getElementsByClassName("side-nav")
-let closeBtn = document.getElementsByName("close")[0];
+/*===========MOBILE NAV=========== */
+
+const mobileNavBtn = document.getElementById("mobile-navigation")
+const mobileNav = document.getElementsByClassName("side-nav")
+const closeBtn = document.getElementsByName("close")[0];
 
 mobileNavBtn.addEventListener("click", () => {
     mobileNav[0].style.width = "50%";
@@ -12,6 +14,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 
+/*=========CHART.JS Section (section skills in html)=============*/ 
 
 const frontLangs = ["React", "Vanilla", "Electron"];
 const frontPercentages = [60,30, 10];
@@ -79,3 +82,22 @@ const backChart = new Chart(backend, {
     }
 }
 });
+
+/*===========ANIMATION HANDLING=============*/
+
+
+/*-----------Sections-----------*/
+
+const about = document.getElementById("about");
+const skills = document.getElementById("skills");
+const services = document.getElementById("services");
+const portfolio = document.getElementById("portfolio");
+const contact = document.getElementById("contact");
+
+/*-----------Elements-----------*/
+
+const contactForm = document.getElementsByClassName("contact-card")[0];
+
+
+
+
