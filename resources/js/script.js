@@ -5,7 +5,7 @@ const mobileNav = document.getElementsByClassName("side-nav")
 const closeBtn = document.getElementsByName("close")[0];
 
 mobileNavBtn.addEventListener("click", () => {
-    mobileNav[0].style.width = "50%";
+    mobileNav[0].style.width = "100%";
     
 });
 
@@ -93,11 +93,27 @@ const skills = document.getElementById("skills");
 const services = document.getElementById("services");
 const portfolio = document.getElementById("portfolio");
 const contact = document.getElementById("contact");
+const header = document.querySelector("header");
 
 /*-----------Elements-----------*/
 
 const contactForm = document.getElementsByClassName("contact-card")[0];
 
+
+
+/*-----------NavBar scroll----------*/
+
+const nav = document.querySelector('.nav-row'); // Identify target
+
+window.addEventListener('scroll', function(event) { // To listen for event
+    event.preventDefault();
+
+    if (window.scrollY <= 350) { // Just an example
+        nav.style.backgroundColor = 'transparent'; // or default color
+    } else {
+        nav.style.backgroundColor = 'rgba(22, 22, 22, 0.8)';
+    }
+});
 
 
 

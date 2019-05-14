@@ -14,6 +14,7 @@ html {
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 
@@ -127,8 +128,9 @@ header {
   position: fixed;
   top: 0;
   padding: 20px;
-  background: transparent;
   z-index: 200;
+  transition: background-color 0.3s;
+  font-size: 90%;
 }
 
 .nav-logo{
@@ -213,7 +215,7 @@ header {
 }
 
 .mobile-nav {
-  background: #81ecec;
+  background: rgba(22, 22, 22, 0.8);
   height: 50px;
   width: 100%;
   position: fixed;
@@ -225,7 +227,7 @@ header {
   width: 0;
   height: 100%;
   position: fixed;
-  background-color: #0984e3;
+  background-color: #331c3b;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
   z-index: 9999;
@@ -348,7 +350,6 @@ header {
   z-index: 1;
   padding-bottom: 70px;
   background-size: cover;
-  
 }
 
 .portfolio-title{
@@ -369,18 +370,23 @@ header {
   margin-left: 10%;
   text-align: center;
   margin-bottom: 50px;
-  font-size: 120%;
+  
   
 }
 
 .work-row{
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
   padding: 0 80px;
   display: flex;
   flex: 1;
   flex-direction: row; 
- 
+  text-align: center;
   
+}
+
+.work-row:last-of-type{
+  margin-top: 50px;
 }
 
 .work-row *{ 
@@ -433,14 +439,14 @@ header {
   display: flex;
   width: 90%;
   margin-left: 5%;
-  
+  padding: 10px;  
 }
 
 .service-card {
   margin-top: 50px;
   justify-content: space-between;
   margin-right: 100px;
-  width: 33%;
+  width: 35%;
   text-align: center;
 }
 .service-card p {
@@ -483,7 +489,7 @@ header {
   padding: 150px;
 }
 
-.contact-card {
+.contact-card form{
 
   width: 50%;
   background-color: #034f8a;
@@ -542,6 +548,7 @@ header {
   height: 200px;
   background-color: #0984e3;
   border: none;
+  resize: none;
 }
 
 
@@ -581,5 +588,5 @@ header {
 }
 
 .footer-list li ion-icon {
-  font-size: 30px;
+  font-size: 150%;
 }

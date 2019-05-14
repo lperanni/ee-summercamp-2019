@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,300i,400" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="resources/images/favicons/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="./resources/css/animations.css">
   <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css">
   <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/queries.css">
+  
 </head>
 <body>
   <header>
@@ -31,7 +32,7 @@
         <li><ion-icon name="contacts" class="mobile-nav-icon"></ion-icon><a href="#contact">Contact</a></li>
       </div>
     </nav>
-    <div class="nav-row">
+    <div class="nav-row not-scrolled">
       <div class="nav-logo">
         <a href="#"><i>Luciano</i></a>
       </div>
@@ -42,11 +43,11 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <div class="title-screen">
-      <h1 class="animated fadeInLeftBig">Web Developer</h1>
-      <p class="animated fadeInDown delay-1s">Hello, my name is Luciano Peranni and im an aspiring developer from Croatia.<br> My goal is to make beautiful applications.</p>
-      <a href="#portfolio" class="btn btn-full animated fadeInRight delay-2s">Show me your work!</a>
-      <a href="#contact" class="btn btn-ghost animated fadeInRight delay-2s">Send me a message!</a>
+    <div class="title-screen animatedParent animateOnce" data-sequence='500'>
+      <h1 class="animated bounceInLeft" data-id="1">Web Developer</h1>
+      <p class="animated bounceInUp" data-id="2">Hello, my name is Luciano Peranni and im an aspiring developer from Croatia.<br> My goal is to make beautiful applications.</p>
+      <a href="#portfolio" class="btn btn-full animated fadeIn" data-id="3">Show me your work!</a>
+      <a href="#contact" class="btn btn-ghost animated fadeIn" data-id="3">Send me a message!</a>
     </div>
   </header>
 
@@ -75,74 +76,74 @@
       These are Graphs present the percentage to which is use the following languages/Frameworks.
     </p>
     <div class="chart-row">
-      <div class="chart-container">
-          <canvas class="skill-chart" id="frontend" width="200" height="200"></canvas>
+      <div class="chart-container animatedParent animateOnce">
+          <canvas class="skill-chart animated bounceInLeft" id="frontend" width="200" height="200"></canvas>
       </div>
-      <div class="chart-container">
-          <canvas class="skill-chart" id="backend" width="200" height="200"></canvas>
+      <div class="chart-container animatedParent animateOnce">
+          <canvas class="skill-chart animated bounceInRight" id="backend" width="200" height="200"></canvas>
       </div>
     </div>
-  
   </section>
 
-  <section id="portfolio" class="section-portfolio">
+  <section id="portfolio" class="section-portfolio animatedParent animateOnce" data-appear-top-offset='-800'>
     <div class="portfolio-title">
       <h2>My Work</h2>  
       <p class="portfolio-intro">For a few months i have been trying out a few different technologies, mostly for Web developing and occasionally Desktop Application development.These are some of the projects i have worked on for the past few months</p>
     </div>  
-      <div class="work-row">
+      <div class="work-row animated fadeIn">
           <a href="https://github.com/lperanni/blogger-cat.git"><img src="./resources/images/app-portfolio-icons/blogger-cat-app.png" alt="blog-app"></a>
           <div class="app-desc">
             <h3>Blogger-Cat</h3>
             <p>Hackable free Blog site template made in React.js.</p>
           </div>
       </div>
-      <div class="work-row">
-        <a href="https://github.com/KopiliCrew/Presentable-Schedule-App.git"><img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app"></a>
+      
+      <div class="work-row animated fadeIn">
         <div class="app-desc">
           <h3>Schedule App</h3>
           <p>A cross-platform Desktop application that keeps track of your University schedule</p>
         </div>
+        <a href="https://github.com/KopiliCrew/Presentable-Schedule-App.git"><img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app"></a>
       </div>
   </section>
 
   <section id="services" class="section-services">
-    <div class="row">
-      <h2>My Services</h2>
+    <div class="animatedParent animateOnce">
+      <h2 class="animated bounceInDown box">My Services</h2>
       <p class="services-text">
         I am constantly learning new technologies to be up to date with current programming trends.
         Hopefully these will be constantly updated as i go along and learn new Languages and Frameworks.
         The following are some of the types of programs i am able to produce.
       </p>
     </div>
-    <div class="service-row">
-      <div class="service-card">
+    <div class="service-row animatedParent animateOnce">
+      <div class="service-card animated bounceInLeft">
         <ion-icon name="today"></ion-icon>
         <h4>Responsive Web design</h4>
         <p>My Web applications and Sites are responsive and look good on devices of all sizes. Don't believe me? Resize this site.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card animated bounceInUp">
         <ion-icon name="tablet-portrait"></ion-icon>
         <h4>Modern Mobile Apps</h4>
         <p>Using React Native and Android Studio i develop mobile Apps mainly for Android Phones</p>
       </div>
-      <div class="service-card">
+      <div class="service-card animated bounceInRight">
         <ion-icon name="desktop"></ion-icon>        
         <h4>Desktop Apps</h4>
         <p>Electron is my Framework of choice to develop neat looking simple Desktop Applications</p>
       </div>
     </div>
   </section>
-  <section id="contact" class="section-contact">
+  <section id="contact" class="section-contact ">
     <div class="row">
         <h2>Want to contact me?</h2>
     </div>
-    <div class="contact-card">
-      <form class="contact-form" action="">
+    <div class="contact-card animatedParent animateOnce">
+      <form class="contact-form animated fadeIn delay-250" action="POST">
         <h3>Contact</h3>
-          <input class="text-inputs" type="text" placeholder=" First Name">
-          <input class="text-inputs" type="text" placeholder=" Last Name">
+          <input class="text-inputs" type="text" placeholder=" Full Name">
           <input class="text-inputs" type="email" placeholder=" E-mail">
+          <input class="text-inputs" type="text" placeholder=" Subject">
           <div class="text-submit">
             <textarea placeholder=" Message" name="" id="" cols="50" rows="5"></textarea><br>
           </div>
@@ -162,9 +163,12 @@
     </div>
   </footer>
 
+
 <!--SCRIPTS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="resources/js/css3-animate-it.js"></script>
 <script src="resources/js/script.js"></script>
 
 </body>

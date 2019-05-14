@@ -1,31 +1,55 @@
+@media only screen and (max-width: 1200px){
+  
+  html{font-size: 18px;}
+  
+  .section-services{padding: 10px;}
+  
+  .contact-card form{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+}
+
+
 @media only screen and (max-width: 1024px){
 
-  h1{
-    font-size: 350%
+  /*====BASIC=====*/
+
+  h1{font-size: 350%}
+
+  /*====FOOTER=====*/
+  .section-footer p {width: 80%;}
+  .section-footer ul{width: 20%;}
+
+  /*====SERVICE=====*/
+
+  .section-services{padding-top: 80px;}
+
+  .service-card{margin-right: 0;}
+
+  /*====SKILLS=====*/
+
+  .chart-row{display: block;}
+  .chart-container{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .chart-container canvas{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 12%;
   }
 
-  .about-text p{
-    font-size: 85%;
-  }
-  .work-row{
-    padding-left: 0;
+  /*====PORTFOLIO=====*/
+
+  .portfolio-title{
+    padding: 5px;
+    padding-top: 110px;
   }
 
-  .services-text{
-    font-size: 90%;
-  }
-  .service-card p{
-    font-size: 80%;
-  }
-  .service-card{
-    margin-right: 0;
-  }
-  .section-footer p {
-    width: 80%;
-  }
-  .section-footer ul{
-    width: 20%;
-  }
+   
+  .work-row{padding-left: 0;}
 
 }
 
@@ -33,13 +57,153 @@
 @media only screen and (max-width: 768px){
 
 
-    .section-contact{
-      padding: 0;
-    }
-  .contact-card {
+  html{font-size: 17px;}
 
+  /*====NAVIGATION=====*/
+  .mobile-nav{display: block;}
+
+  .nav-row{display: none;}
+  
+  
+  /*======CONTACT=====*/
+  
+  .section-contact{
+      padding: 90px 0;
+    }
+
+  /*=====SKILLS======*/
+
+  .section-skills{
+    padding: 25px;
+    padding-top: 100px;
+  }
+
+  /*===ABOUT====*/
+  .about-container{
+    display: block;
+    text-align: center;
+  }
+
+  .about-container h3{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .about-container .image-container {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+  }
+
+  .image-container img{
+    width: 100%;
+    height: auto;
+  }
+
+  /*====PORTFOLIO=====*/
+
+  .portfolio-title{
+    padding: 20px;
+    padding-top: 150px;
+  }
+
+  .work-row{
     width: 90%;
     margin-left: 5%;
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-title{
+    margin-bottom: 50px;
+  }
+
+  .work-row:last-of-type{
+    margin-top: 50px;
+  }
+  
+  .work-row *{ 
+  
+    justify-content: space-between;
+    padding: 10px;
+    color: black;
+    text-align: center;
+  }
+  
+  .work-row img{height: 350px;}
+  
+  .app-desc p{
+    color: black;
+    margin-top: 0px;
+  }
+  .app-desc h3{
+    color: #9b59b6;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    width: 50%;
+    margin-left: 25%;
+  }
+  
+
+/*=====SERVICE=====*/
+
+.service-row{display: block;}  
+
+.service-card{
+  width: 100%;
+  text-align: initial;
+}
+.service-card ion-icon{font-size: 500%;}
+
+.service-card h4{font-size: 200%;}
+}
+
+@media only screen and (max-width: 583px){
+
+
+  /*====TITLE=====*/
+
+  .btn{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 50%;
     
   }
+
+  .title-screen{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: static;
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  header{
+    padding-bottom: 20px;
+    height: fit-content;
+  }
+
+   /*====FOOTER=====*/
+
+  .section-footer p{
+    width: 80%;
+  }
+
+  .footer-list{
+    width: 20%;
+    font-size: 90%;
+  }
+
+  /*====SKILLS=====*/
+
+  .chart-container canvas{
+    margin: 0;
+  }
+
+
 }
