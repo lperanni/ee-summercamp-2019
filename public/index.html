@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,300i,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/normalize.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="./resources/css/animations.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/queries.css">
+  
+</head>
+<body>
+  <header>
+    <div class="mobile-nav">
+      <ion-icon id="mobile-navigation" name="md-menu" class="mobile-nav-btn"></ion-icon>
+      <h4 class="mobile-nav-title">Peranni IT</h4>
+    </div>
+    <nav class="side-nav">
+      <h4 class="side-nav-title">Menu</h4>
+      <ion-icon name="close" class="closeBtn"></ion-icon>
+      <ul class="mobile-nav-btns">
+        <li><ion-icon name="home" class="mobile-nav-icon"></ion-icon><a href="#">Home</a></li>
+        <li><ion-icon name="help" class="mobile-nav-icon"></ion-icon><a href="#about">About</a></li>
+        <li><ion-icon name="desktop" class="mobile-nav-icon"></ion-icon><a href="#services">Services</a></li>
+        <li><ion-icon name="contacts" class="mobile-nav-icon"></ion-icon><a href="#contact">Contact</a></li>
+      </div>
+    </nav>
+    <div class="nav-row not-scrolled">
+      <div class="nav-logo">
+        <a href="#"><i>Luciano</i></a>
+      </div>
+      <ul class="header-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="title-screen animatedParent animateOnce" data-sequence='500'>
+      <h1 class="animated bounceInLeft" data-id="1">Web Developer</h1>
+      <p class="animated bounceInUp" data-id="2">Hello, my name is Luciano Peranni and im an aspiring developer from Croatia.<br> My goal is to make beautiful applications.</p>
+      <a href="#portfolio" class="btn btn-full animated fadeIn" data-id="3">Show me your work!</a>
+      <a href="#contact" class="btn btn-ghost animated fadeIn" data-id="3">Send me a message!</a>
+    </div>
+  </header>
+
+  <section id="about" class="section-about">
+    <div class="about-container">
+      <div class="image-container">
+        <img src="resources/images/ja.jpg" alt="my_image">
+      </div>
+      <div class="about-text">
+        <p>Hello, my name is</p>
+        <h3>Luciano Peranni</h3>
+        <p>
+          I am a German-born half Italian half Croatian IT Student at the Split University Department for Professional Studies.
+          I started my Developer Journey making console applications in C. Today, my main focus are Front-End Technologies like React, HTML5 and CSS3 with Node.js backends.
+        </p>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="skills" class="section-skills">
+    <h2>My Skills</h2>
+    <p>
+      As my primary Area of studying is Web development my skills are mainly based in the Javascript
+      programming language. Going along, the goal is to expand my skillset with more technologies. 
+      These are Graphs present the percentage to which is use the following languages/Frameworks.
+    </p>
+    <div class="chart-row">
+      <div class="chart-container animatedParent animateOnce">
+          <canvas class="skill-chart animated bounceInLeft" id="frontend" width="200" height="200"></canvas>
+      </div>
+      <div class="chart-container animatedParent animateOnce">
+          <canvas class="skill-chart animated bounceInRight" id="backend" width="200" height="200"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section-portfolio animatedParent animateOnce" data-appear-top-offset='-800'>
+    <div class="portfolio-title">
+      <h2>My Work</h2>  
+      <p class="portfolio-intro">For a few months i have been trying out a few different technologies, mostly for Web developing and occasionally Desktop Application development.These are some of the projects i have worked on for the past few months</p>
+    </div>  
+      <div class="work-row animated fadeIn">
+          <a href="https://github.com/lperanni/blogger-cat.git"><img src="./resources/images/app-portfolio-icons/blogger-cat-app.png" alt="blog-app" class="portfolio-img"></a>
+          <div class="app-desc">
+            <h3>Blogger-Cat</h3>
+            <p>Hackable free Blog site template made in React.js.</p>
+          </div>
+      </div>
+      
+      <div class="work-row animated fadeIn">
+        <a href="https://github.com/KopiliCrew/Presentable-Schedule-App.git"><img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app" class="portfolio-img"></a>
+        <div class="app-desc">
+          <h3>Schedule App</h3>
+          <p>A cross-platform Desktop application that keeps track of your University schedule</p>
+        </div>
+      </div>
+  </section>
+
+  <section id="services" class="section-services">
+    <div class="animatedParent animateOnce">
+      <h2 class="animated bounceInDown box">My Services</h2>
+      <p class="services-text">
+        I am constantly learning new technologies to be up to date with current programming trends.
+        Hopefully these will be constantly updated as i go along and learn new Languages and Frameworks.
+        The following are some of the types of programs i am able to produce.
+      </p>
+    </div>
+    <div class="service-row animatedParent animateOnce">
+      <div class="service-card animated bounceInLeft">
+        <ion-icon name="today"></ion-icon>
+        <h4>Responsive Web design</h4>
+        <p>My Web applications and Sites are responsive and look good on devices of all sizes. Don't believe me? Resize this site.</p>
+      </div>
+      <div class="service-card animated bounceInUp">
+        <ion-icon name="tablet-portrait"></ion-icon>
+        <h4>Modern Mobile Apps</h4>
+        <p>Using React Native and Android Studio i develop mobile Apps mainly for Android Phones</p>
+      </div>
+      <div class="service-card animated bounceInRight">
+        <ion-icon name="desktop"></ion-icon>        
+        <h4>Desktop Apps</h4>
+        <p>Electron is my Framework of choice to develop neat looking simple Desktop Applications</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section-contact ">>
+    <h2>Want to contact me?</h2>
+    <div class="contact-card animatedParent animateOnce">
+      <form class="contact-form animated fadeIn delay-250" method="post" action="/submit">
+        <h3>Contact</h3>
+          <input class="text-inputs" type="text" placeholder=" Full Name" name="fullname">
+          <input class="text-inputs" type="email" placeholder=" E-mail" name="email">
+          <input class="text-inputs" type="text" placeholder=" Subject" name="subject">
+          <div class="text-submit">
+            <textarea placeholder=" Message" cols="50" rows="5" name="message"></textarea><br>
+          </div>
+          <input type="submit" value="Send" class="submit-btn">
+      </form>
+    </div>
+
+  </section>
+  <footer class="section-footer">
+    <div class="footer-row">
+      <p>Published using Github Pages©</p>
+      <ul class="footer-list">
+        <li><a href="https://github.com/lperanni"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="https://www.facebook.com/luciano.peranni"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://twitter.com/LucianoPeranni"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+<!--SCRIPTS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="resources/js/css3-animate-it.js"></script>
+<script src="resources/js/script.js"></script>
+
+</body>
+</html>
