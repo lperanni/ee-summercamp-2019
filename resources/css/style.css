@@ -11,11 +11,15 @@ html {
   font-size: 20px;
   background: #fff;
   color: white;
-  overflow-x: hidden;
+ overflow-x: hidden;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   box-sizing: border-box;
+ 
+}
 
+body{
+  overflow: hidden;
 }
 
 
@@ -79,6 +83,8 @@ label {
   text-align: right;
   padding-right: 0;
 }
+
+
 
 textarea:focus,
 input:focus {
@@ -372,13 +378,11 @@ header {
   text-align: center;
   margin-bottom: 50px;
   
-  
 }
 
 .work-row{
-  width: 80%;
-  margin-left: 10%;
-  padding: 0 80px;
+  
+ 
   display: flex;
   flex: 1;
   flex-direction: row; 
@@ -395,10 +399,11 @@ header {
   justify-content: space-between;
   padding: 30px;
   color: black;
+  text-align: center;
 }
 
-.app-desc a img{
-  width: 100%;
+.portfolio-img{
+  width: 70%;
   height: auto;
 }
 
@@ -489,6 +494,11 @@ header {
   
   color: black;
   padding: 150px;
+}
+
+.section-contact h2{
+  width: 70%;
+  margin-left: 15%;
 }
 
 .contact-card form{

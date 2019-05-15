@@ -60,6 +60,8 @@
   html{font-size: 17px;}
 
   /*====NAVIGATION=====*/
+
+  
   .mobile-nav{display: block;}
 
   .nav-row{display: none;}
@@ -92,6 +94,7 @@
   .about-container .image-container {
     width: 60%;
     margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 30px;
   }
 
@@ -113,7 +116,7 @@
     display: flex;
     flex: 1;
     flex-direction: column; 
-    text-align: center;
+
     margin-bottom: 10px;
   }
   
@@ -133,7 +136,7 @@
     text-align: center;
   }
   
-  .work-row img{height: 350px;}
+  .work-row img{height: 80%;}
   
   .app-desc p{
     color: black;
@@ -143,8 +146,7 @@
     color: #9b59b6;
     margin-top: 20px;
     padding-bottom: 5px;
-    width: 50%;
-    margin-left: 25%;
+    width: 80%;
   }
   
 
@@ -209,5 +211,11 @@
 }
 
 @media only screen and (max-width: 480px){
-  html{font-size: 15px;}
+  
+  
+    html{font-size: 15px;}
+  .image-container img{margin-right: 0;}
+
+  
+
 }
