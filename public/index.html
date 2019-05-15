@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" media="screen">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,300i,400" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/normalize.css">
   <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png">
@@ -99,11 +99,11 @@
       </div>
       
       <div class="work-row animated fadeIn">
+        <a href="https://github.com/KopiliCrew/Presentable-Schedule-App.git"><img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app"></a>
         <div class="app-desc">
           <h3>Schedule App</h3>
           <p>A cross-platform Desktop application that keeps track of your University schedule</p>
         </div>
-        <a href="https://github.com/KopiliCrew/Presentable-Schedule-App.git"><img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app"></a>
       </div>
   </section>
 
@@ -139,13 +139,13 @@
         <h2>Want to contact me?</h2>
     </div>
     <div class="contact-card animatedParent animateOnce">
-      <form class="contact-form animated fadeIn delay-250" action="POST">
+      <form class="contact-form animated fadeIn delay-250" method="post" action="/submit">
         <h3>Contact</h3>
-          <input class="text-inputs" type="text" placeholder=" Full Name">
-          <input class="text-inputs" type="email" placeholder=" E-mail">
-          <input class="text-inputs" type="text" placeholder=" Subject">
+          <input class="text-inputs" type="text" placeholder=" Full Name" name="fullname">
+          <input class="text-inputs" type="email" placeholder=" E-mail" name="email">
+          <input class="text-inputs" type="text" placeholder=" Subject" name="subject">
           <div class="text-submit">
-            <textarea placeholder=" Message" name="" id="" cols="50" rows="5"></textarea><br>
+            <textarea placeholder=" Message" cols="50" rows="5" name="message"></textarea><br>
           </div>
           <input type="submit" value="Send" class="submit-btn">
       </form>
