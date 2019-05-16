@@ -11,16 +11,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="resources/images/favicons/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
-  <link rel="stylesheet" href="./resources/css/animations.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/queries.css">
+  <link rel="stylesheet" href="./vendors/css/animations.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/queries.min.css">
   
 </head>
 <body>
   <header>
     <div class="mobile-nav">
-      <ion-icon id="mobile-navigation" name="md-menu" class="mobile-nav-btn"></ion-icon>
       <h4 class="mobile-nav-title">Peranni IT</h4>
+      <figure class="mobile-nav-btn">
+        <ion-icon id="mobile-navigation" name="md-menu"></ion-icon>
+      </figure>
     </div>
     <nav class="side-nav">
       <h4 class="side-nav-title">Menu</h4>
@@ -30,6 +32,7 @@
         <li><ion-icon name="help" class="mobile-nav-icon"></ion-icon><a href="#about">About</a></li>
         <li><ion-icon name="desktop" class="mobile-nav-icon"></ion-icon><a href="#services">Services</a></li>
         <li><ion-icon name="contacts" class="mobile-nav-icon"></ion-icon><a href="#contact">Contact</a></li>
+        <li><ion-icon name="book" class="mobile-nav-icon"></ion-icon><a href="#skills">Skills</a></li>
       </div>
     </nav>
     <div class="nav-row not-scrolled">
@@ -52,11 +55,11 @@
   </header>
 
   <section id="about" class="section-about">
-    <div class="about-container">
+    <div class="about-container animatedParent">
       <div class="image-container">
-        <img src="resources/images/ja.jpg" alt="my_image">
+        <img src="resources/images/ja.jpg" alt="my_image" class="animated fadeIn">
       </div>
-      <div class="about-text">
+      <div class="about-text animated bounceInRight">
         <p>Hello, my name is</p>
         <h3>Luciano Peranni</h3>
         <p>
@@ -76,10 +79,10 @@
       These are Graphs present the percentage to which is use the following languages/Frameworks.
     </p>
     <div class="chart-row">
-      <div class="chart-container animatedParent animateOnce">
+      <div class="chart-container animatedParent animateOnce data-appear-top-offset='350'">
           <canvas class="skill-chart animated bounceInLeft" id="frontend" width="200" height="200"></canvas>
       </div>
-      <div class="chart-container animatedParent animateOnce">
+      <div class="chart-container animatedParent animateOnce data-appear-top-offset='350'">
           <canvas class="skill-chart animated bounceInRight" id="backend" width="200" height="200"></canvas>
       </div>
     </div>
@@ -90,7 +93,7 @@
       <h2>My Work</h2>  
       <p class="portfolio-intro">For a few months i have been trying out a few different technologies, mostly for Web developing and occasionally Desktop Application development.These are some of the projects i have worked on for the past few months</p>
     </div>  
-      <div class="work-row animated fadeIn">
+      <div class="work-row animated fadeInLeft">
           <a href="https://github.com/lperanni/blogger-cat.git"><img src="./resources/images/app-portfolio-icons/blogger-cat-app.png" alt="blog-app" class="portfolio-img"></a>
           <div class="app-desc">
             <h3>Blogger-Cat</h3>
@@ -98,7 +101,7 @@
           </div>
       </div>
       
-      <div class="work-row animated fadeIn">
+      <div class="work-row animated fadeInRight" data-appear-top-offset='350'>
         <a href="https://github.com/KopiliCrew/Presentable-Schedule-App.git"><img src="./resources/images/app-portfolio-icons/schedule-app.png" alt="blog-app" class="portfolio-img"></a>
         <div class="app-desc">
           <h3>Schedule App</h3>

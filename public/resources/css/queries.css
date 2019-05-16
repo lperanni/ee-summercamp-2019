@@ -33,7 +33,9 @@
   .chart-row{display: block;}
   .chart-container{
     width: 100%;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .chart-container canvas{
     width: 90%;
@@ -113,9 +115,16 @@
   .work-row{
     width: 90%;
     margin-left: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex: 1;
-    flex-direction: column; 
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
 
     margin-bottom: 10px;
   }
@@ -130,7 +139,11 @@
   
   .work-row *{ 
   
-    justify-content: space-between;
+    -webkit-box-pack: justify; 
+  
+        -ms-flex-pack: justify; 
+  
+            justify-content: space-between;
     padding: 10px;
     color: black;
     text-align: center;
@@ -187,6 +200,8 @@
 
   header{
     padding-bottom: 20px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 
@@ -207,6 +222,26 @@
     margin: 0;
   }
 
+  .work-row{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .work-row h3{
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .app-desc{
+    padding: 20px 0;
+  }
+
+  .app-desc p{
+    padding: 5px;
+  }
+
 
 }
 
@@ -216,6 +251,8 @@
     html{font-size: 15px;}
   .image-container img{margin-right: 0;}
 
-  
+  .section-footer{padding: 6px 5px;}
+
+
 
 }

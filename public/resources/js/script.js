@@ -5,13 +5,22 @@ const mobileNav = document.getElementsByClassName("side-nav")
 const closeBtn = document.getElementsByName("close")[0];
 
 mobileNavBtn.addEventListener("click", () => {
-    mobileNav[0].style.width = "100%";
+    mobileNav[0].style.height = "80%";
     
 });
 
 closeBtn.addEventListener("click", () => {
-  mobileNav[0].style.width = "0px"
+  mobileNav[0].style.height = "0px"
 });
+
+
+const buttons = document.querySelectorAll(".mobile-nav-btns li a");
+
+buttons.forEach( button => {
+  button.addEventListener("click", () => {
+    mobileNav[0].style.height = "0px"
+  })
+})
 
 
 /*=========CHART.JS Section (section skills in html)=============*/ 
