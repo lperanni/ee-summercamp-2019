@@ -1,10 +1,10 @@
 {
-  "name": "lperanni.github.io",
+  "name": "lperanni",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app/server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/lperanni/ee-summercamp-2019#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.16.4"
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "nodemailer": "^6.1.1"
   }
 }
